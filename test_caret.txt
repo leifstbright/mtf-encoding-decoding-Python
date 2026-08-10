@@ -1,0 +1,2 @@
+2^10 equals 1024 and 2^8 equals 256
+a^b^c is a weird looking word
