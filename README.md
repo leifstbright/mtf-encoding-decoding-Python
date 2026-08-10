@@ -19,7 +19,3 @@ highlight performance considerations and algorithmic clarity.
 - C
 - Python
 - Algorithmic data manipulation
-
-## Notes
-Originally developed as part of a computer science course and later refined for
-portfolio presentation.
