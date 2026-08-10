@@ -1,21 +1,23 @@
-# Move-To-Front Encoding and Decoding
+# MTF Encode/Decode
 
-Implementations of the Move-To-Front (MTF) encoding and decoding algorithm in both
-C and Python.
+A move-to-front (MTF) text encoder/decoder. Encodes a text file into a compact binary `.mtf` format, and decodes an `.mtf` file back into plain text.
 
-## Overview
-This project explores the Move-To-Front transform, a technique commonly used in
-data compression pipelines to improve locality and compressibility.
+## Requirements
 
-Both low-level (C) and high-level (Python) implementations are included to
-highlight performance considerations and algorithmic clarity.
+- Python 3 (no external libraries needed)
 
-## Features
-- MTF encoding and decoding
-- Dual implementations in C and Python
-- Focus on correctness and efficiency
+## Usage
 
-## Technologies
-- C
-- Python
-- Algorithmic data manipulation
+Both encoding and decoding are handled by the same script — it automatically picks the right mode based on the file extension of the input file.
+
+**To encode** a text file into `.mtf`:
+```bash
+python mtf-encode-decode.py <file>.txt
+```
+This creates `<file>.mtf` in the same directory.
+
+**To decode** an `.mtf` file back into text:
+```bash
+python mtf-encode-decode.py <file>.mtf
+```
+This creates `<file>.txt` in the same directory.
