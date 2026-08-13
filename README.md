@@ -4,11 +4,11 @@ A move-to-front (MTF) text encoder/decoder. Encodes a text file into a compact b
 
 ## Requirements
 
-- Python 3 (no external libraries needed)
+- Python 3 or C (no external libraries needed)
 
-## Usage
+## Usage for Python
 
-Both encoding and decoding are handled by the same script — it automatically picks the right mode based on the file extension of the input file.
+Python -> Both encoding and decoding are handled by the same script — it automatically picks the right mode based on the file extension of the input file.
 
 **To encode** a text file into `.mtf`:
 ```bash
@@ -21,3 +21,13 @@ This creates `<file>.mtf` in the same directory.
 python mtf-encode-decode.py <file>.mtf
 ```
 This creates `<file>.txt` in the same directory.
+
+## Usage for C 
+C -> gcc -o mtf mtf.c
+**To encode** a text file into `.mtf`:
+
+./mtf story.txt      
+
+**To decode** an `.mtf` file back into text:
+
+./mtf story.mtf      
